@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+		<link rel="stylesheet" href="style.css" />
+        <title>Alexis MATHEY | Site CV</title>
+		<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&sensor=false">
+		</script>
+
+		<script>
+			function initialize()
+			{
+			var mapProp = {
+			  center:new google.maps.LatLng(48.946,2.16),
+			  zoom:11,
+			  mapTypeId:google.maps.MapTypeId.ROADMAP
+			  };
+			var map=new google.maps.Map(document.getElementById("map_canvas")
+			  ,mapProp);
+			}
+
+			google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
+    </head>
+	
+	<body>
+		<div id="bloc_page">
+		
+			<header>
+				<div id="main_title">ALEXIS MATHEY</div>
+				<nav>
+					<ul>
+						<a href="home.html"><li id="apropos"><img src="images/icon_apropos.png" alt="A propos" /></li></a>
+						<a href="cv.html"><li id="cv"><img src="images/icon_cv.png" alt="Mon CV" /></li></a>
+						<a href="actu.html"><li id="actu"><img src="images/icon_actu.png" alt="Mon actu" /></li></a>
+						<a href="contact.html"><li class="current_tab" id="contact"><img src="images/icon_contact.png" alt="Contact" /></li></a>
+					</ul>
+				</nav>
+				<h1 id="title_contact">Me contacter</h1>
+			</header>
+			
+			
+			<div class="content">
+				<section class="contact_element">
+					<h2>Mes coordonnées</h2>
+					<div class="position">
+						<img src="images/icon_position.png" alt="" id="icon_pos"/> <span id="pos">Je suis actuellement à <span id="current_pos">Sartrouville - Ile-de-France</span></span>
+					</div>
+					<div class="coord">
+						Alexis Mathey<br />06 29 10 30 38<br />
+						<a href="mailto:alex.mathey78@gmail.com">Envoyez-moi un mail</a>
+				</section>
+				
+				<div id="map_canvas"></div>
+			</div>
+			
+			
+			
+			<footer>
+				<div id="credits">
+					Alexis Mathey - 2014<br />Tous droits réservés
+				</div>
+				<div id="networks">
+					<a href="https://www.facebook.com/alek.matevski"><img src="images/icon_facebook.png" alt="Facebook" class="network"/></a>
+					<a href="https://www.linkedin.com/profile/view?id=267571364&trk=nav_responsive_tab_profile"><img src="images/icon_linkedin.png" alt="LinkedIn" class="network"/></a>
+					<a href="https://plus.google.com/+AlexisMathey78/posts"><img src="images/icon_google.png" alt="Google+" class="network"/></a>
+					<a href="mailto:alex.mathey78@gmail.com"><img src="images/icon_mail.png" alt="Mail" class="network"/></a>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
